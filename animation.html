@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        .galaxy{
+            background-size: cover;
+            background-image:url(https://cdn.hswstatic.com/gif/gettyimages-139494347.jpg) ;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .planet{
+            height: 400px;
+            width: 400px;
+            border:  2px solid white;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            position: relative;
+            animation-name: rotate;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            border-radius: 50%;
+        }
+        @keyframes rotate {
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+        .sun{
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            background-color: orange;
+            background-image: url();
+            transform: rotate(0deg);
+        
+        }
+        .mercury{
+            height: 100px;
+            width:100px ;
+            position: absolute;
+
+            top:0;
+            left: 0;
+            border-radius: 50%;
+            background-color: grey;
+        box-shadow: 2px 2px 20px darkgray;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="galaxy">
+        <div class="planet">
+            <div class="mercury">
+                <div class="sun"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
